@@ -1,0 +1,56 @@
+.pontos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+
+.pontos div, label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.pontos span {
+    margin-right: 10px;
+}
+
+.calculadora {
+    width: 450px;
+}
+
+.ponto {
+    width: 100%;
+    height: 35px;
+    font-family: MRegular;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.ponto:focus {
+    outline: 0;
+}
+
+.primeira-linha {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+}
+
+.botoes-calculo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.calculadora button {
+    font-size: 15px;
+}
+
+
+
+

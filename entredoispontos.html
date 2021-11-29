@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+Author: João Rafael de Souza Campoi - @jrafaelcampoi;
+Date: 04/11/2021;
+Project: Calculator;
+Development: HTML, CSS e JS;
+Plataform: Desktop
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/entredoispontos.css">
+    <title>Calculadora - Geometria A.</title>
+</head>
+
+<body>
+   
+    <nav>
+        <a href="index.html">Básica</a>
+        <a href="entredoispontos.html" class="selected">Equações entre dois pontos</a> <!-- Page para calculadora de equações entre dois pontos -->
+        <a href="distanciaentrepontoereta.html">Distância entre ponto e reta</a> <!-- Page para calculadora da distância entre ponto e reta -->
+        <a href="equacaoreduzida.html">Equação reduzida</a> <!-- Page para calculadora da equação reduzida -->
+        <a href="posicaorelativa.html">Posição relativa das retas</a> <!-- Page para calculadora da posição relativa das retas -->
+    </nav>
+
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display">
+
+        <div class="pontos">
+            
+            <label>Ponto A</label>
+            <div><span>x:</span><input type="number" class="ponto" id="xPontoA"></div>
+            
+            <div>
+                <span>y:</span><input type="number" class="ponto" id="yPontoA">
+            </div>
+        </div> 
+        
+        <div class="pontos">
+            
+            <label>Ponto B</label>
+            <div><span>x:</span><input type="number" class="ponto" id="xPontoB"></div>
+            
+            <div>
+                <span>y:</span><input type="number" class="ponto" id="yPontoB">
+            </div>
+        </div>
+
+        <div class="primeira-linha">
+            <button onclick="limpar()">Clean</button>
+        </div>
+
+        <div class="botoes-calculo">
+            <button onclick="calcularDistancia()">DISTÂNCIA</button>
+            <button onclick="calcularPontoMedio()">PONTO MÉDIO</button>
+            <button onclick="calcularEquacaoReta()">EQUAÇÃO DA RETA</button>
+            <button onclick="calcularCoeficiente()">COEFICIENTE</button>
+        </div>
+        
+    </div>
+
+    <script src="css/entredoispontos.css"></script>
+    <script src="js/equacaodoispontos.js"></script>
+
+    <!-- Anexar um made by nas páginas que leva ao Github -->
+    <div><a href="https://github.com/jrafaelcampoi" style="text-decoration: none; color: rgb(150, 150, 150); margin-left: 65px;" target="_blank">made by <b>jrafaelcampoi</b></a></div>
+
+</body>
+
+</html>

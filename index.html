@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+Author: João Rafael de Souza Campoi - @jrafaelcampoi;
+Date: 04/11/2021;
+Project: Calculator;
+Development: HTML, CSS e JS;
+Plataform: Desktop;
+Finalizada: 29/11/2021;
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="icon" href="icon.ico">
+    <title>Calculadora - Geometria A.</title>
+</head>
+
+<body onkeypress="clicouTecla(event)">
+   
+    <nav>
+        <a href="index.html" class="selected">Básica</a>
+        <a href="entredoispontos.html">Equações entre dois pontos</a> <!-- Page para calculadora de equações entre dois pontos -->
+        <a href="distanciaentrepontoereta.html">Distância entre ponto e reta</a> <!-- Page para calculadora da distância entre ponto e reta -->
+        <a href="equacaoreduzida.html">Equação reduzida</a> <!-- Page para calculadora da equação reduzida -->
+        <a href="posicaorelativa.html">Posição relativa das retas</a> <!-- Page para calculadora da posição relativa das retas -->
+    </nav>
+
+    <div class="calculadora"> <!-- class: estilizar -- id: programar-->
+        <input type="text" disabled class="display" id="display">
+        <div class="primeiros-botoes">
+            <button onclick="limpar()">Clean</button>
+            <button onclick="backspace()"><<</button>
+            <button onclick="selecionarOperacao('/')">/</button>
+        </div>
+        <div class="botoes-centrais">
+            <button onclick="inserirNumero('7')">7</button>
+            <button onclick="inserirNumero('8')">8</button>
+            <button onclick="inserirNumero('9')">9</button>
+            <button onclick="selecionarOperacao('*')">x</button>
+            <button onclick="inserirNumero('4')">4</button>
+            <button onclick="inserirNumero('5')">5</button>
+            <button onclick="inserirNumero('6')">6</button>
+            <button onclick="selecionarOperacao('-')">-</button>
+            <button onclick="inserirNumero('1')">1</button>
+            <button onclick="inserirNumero('2')">2</button>
+            <button onclick="inserirNumero('3')">3</button>
+            <button onclick="selecionarOperacao('+')">+</button>
+        </div>
+        <div class="ultimos-botoes">
+            <button onclick="inserirNumero('0')">0</button>
+            <button onclick="inserirDecimal()">,</button>
+            <button onclick="chamarIgual()">=</button>
+        </div>
+    </div>
+
+    <script src="js/basica.js"></script>
+
+    <!-- Anexar um made by nas páginas que leva ao Github -->
+    <div><a href="https://github.com/jrafaelcampoi" style="text-decoration: none; color: rgb(150, 150, 150); margin-left: 65px;" target="_blank">made by <b>jrafaelcampoi</b></a></div>
+
+</body>
+
+</html>
